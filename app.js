@@ -17,9 +17,6 @@ app.use(morgan('dev'))
 //custom
 app.use(logger)
 
-const checkId = (req, res, next) => {
-
-}
 //param MW where it checks for all the id params to reduce the duplicate code
 app.param('id', (req, res, next) => {
     let idVal = +req.params.id
