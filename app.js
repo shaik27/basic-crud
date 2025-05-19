@@ -10,6 +10,7 @@ const logger = (req, res, next) => {
     req.requestedBy = 'Meharaj'
     next()
 }
+
 //middleware
 app.use(express.json())
 //morgan middleware to get the info about api, loadtime etc
